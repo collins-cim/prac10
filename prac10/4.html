@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email list</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            form{
+                width: 650px;
+                margin: 0 auto;
+                padding:15px ;
+                border: 3px solid blue;
+            }
+            .row {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .row label {
+            display: inline-block;
+            width:200px;
+            text-align: right;
+        }
+        .row input {
+            width: 200px;
+            padding: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        h1{
+            font-weight: bold;
+            color: blue;
+            text-align: left;
+        }
+        button{
+            width: 150px;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+        <h1>Please join our email list</h1>
+        <div class="row">
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="collo@gmail.com"><br>
+    </div>
+        <div class="row">
+        <label for="email">Re-enter Email Address:</label>
+        <input type="email" placeholder="">
+        <span class="error">This entry must equal first entry</span><br>
+    </div>
+        <div class="row">
+        <label for="Name">First Name:</label>
+        <input type="text" placeholder="">
+        <span class="error">This field is required</span><br>
+    </div>
+    <button type="submit">Join our List</button>
+    </form>
+        </body>
+</html>
